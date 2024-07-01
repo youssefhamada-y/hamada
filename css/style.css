@@ -1,0 +1,705 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* start home */
+/* start navbar */
+.home {
+    height: 100vh;
+}
+
+.navbar .container1 .logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.logo::after {
+    content: ".";
+    color: brown;
+    font-size: 50px;
+    position: relative;
+    right: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 6%;
+    align-items: center;
+}
+.navs ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.navs ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navs ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 0, 140);
+    display: block;
+    margin: auto;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+.navs ul li:hover::after{
+    width: 100%;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+.logo a::selection {
+    background-color: #DD5959;
+    color: #ffffff;
+}
+
+/* end navbar */
+.container-item {
+    padding: 25px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.container-item img {
+    width: 100%;
+}
+
+.sec1 {
+    margin-top: 85px;
+    padding-bottom: 30px;
+    background-color: #EEEEEE;
+}
+
+.item-details {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.item-details h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+}
+
+.item-details .red {
+    margin: 10px;
+    background-color: red;
+    border-radius: 20%;
+    border: 5px red solid;
+    width: 150px;
+    height: 50px;
+    color: rgb(240, 238, 236);
+}
+
+.item-details .play {
+    margin-left: 40px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.item-details .play i {
+    font-size: 60px;
+}
+
+.item-details span {
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
+
+.item-details table {
+    margin: auto;
+}
+
+.item:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.item-details p::selection {
+    background-color: #DD5959;
+    color: #EEEEEE;
+}
+
+.item-details h2::selection {
+    background-color: #DD5959;
+    color: #EEEEEE;
+}
+
+/* end home */
+
+/* start chefs*/
+.chefs {
+    margin-top: 280px;
+    padding-top: 50px;
+}
+
+.chef-title {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.chef-title h5 {
+    color: rgb(105, 102, 102);
+    padding-top: 20px;
+}
+
+.chef-title h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.chef-title span {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #e30e0e;
+}
+
+.chef-title h2::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.chef-title h5::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.chef-title span::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.container-chef {
+    width: 90%;
+    margin: auto;
+}
+
+.item-image {
+    border-radius: 2%;
+    transition: all .5s;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.item-image img {
+    border-radius: 2%;
+    width: 100%;
+    display: block;
+}
+
+.item-image:hover {
+    transform: scale(110%);
+}
+
+.item-image .inner {
+    background-color: rgb(255, 252, 252);
+}
+
+.bar {
+    border-radius: 4%;
+    transition: all 0.5s;
+    transition-delay: 0.7;
+    transform: translatex(20px);
+    opacity: 0;
+    background-color: rgba(241, 238, 238, 0.5);
+    z-index: 500;
+    width: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.bar i {
+    transition: all 1s;
+    color: #767676;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform: translatex(0);
+}
+
+.bar i:hover {
+    color: black;
+}
+
+.inner h2::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.inner h5::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.inner p::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.inner p {
+    color: #79797f;
+}
+
+.inner h5 {
+    color: #6e6e7a;
+}
+
+/* end chefs */
+
+/* start gallery */
+.gallery {
+    background-color: #efebeb;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.gallery-title {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.gallery-title h5 {
+    color: #79797f;
+    font-size: 15px;
+}
+
+.gallery-title h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.gallery-title span {
+    color: #e30e0e;
+}
+
+.gallery-title h2::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.gallery-title h5::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.gallery-title span::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.item-gallery {
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.item-gallery img {
+    transition: all .5s;
+    border: #ebebeb solid 5px;
+    width: 100%;
+}
+
+.container-gallery {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.block {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
+    transform: translatey(160px);
+    transition-delay: 0.1s;
+}
+
+.block .center {
+    text-align: center;
+}
+
+.block .center h3 {
+    font-size: 27px;
+    color: #EEEEEE;
+}
+
+.block .center h3::selection {
+    background-color: #DD5959;
+}
+
+.block .center p {
+    color: #eeeef1;
+}
+
+.block .center p::selection {
+    background-color: #DD5959;
+}
+
+.item-gallery img:hover {
+    transform: scale(110%);
+}
+
+.block:hover {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+/* end gallery */
+
+/* start contact */
+.contact-us {
+    padding: 20px;
+}
+
+.contact-us .help {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-us .help h5 {
+    font-size: 14px;
+    color: #6e6e6f;
+}
+
+.contact-us .help h5::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.contact-us .help h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+
+.contact-us .help span {
+    color: #e30e0e;
+}
+
+.contact-us .help h2::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.contact-us .help span::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.container-contact {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-us .map-item img {
+    width: 100%;
+}
+
+.contact-us .our-details i {
+    font-size: 20px;
+    border: solid 15px red;
+    border-radius: 50%;
+    color: #EEEEEE;
+    background-color: red;
+}
+
+.contact-us .our-details {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.our-address,
+.email-us,
+.call-us,
+.opening-hour {
+    background-color: #e3e1e1;
+    margin-top: 10px;
+    padding: 10px;
+    width: 110%;
+}
+
+.our-details td {
+    padding-left: 10px;
+}
+
+.our-details h2 {
+    color: #5b5b5b;
+}
+
+.our-details .selection::selection {
+    color: #EEEEEE;
+    background-color: #DD5959;
+}
+
+.form {
+    padding: 10px;
+    position: relative;
+    background-color: rgb(247, 247, 247);
+}
+
+.form .container-form input {
+    width: 370px;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form .container-form textarea {
+    height: 90px;
+    width: 370px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form .container-form {
+    position: relative;
+    right: 10px;
+    padding: 10px 60px 10px 10px;
+}
+
+.form .butt {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form .butt button {
+    transition: all .5s;
+    border: solid 1px #E61414;
+    width: 170px;
+    height: 40px;
+    border-radius: 90px;
+    background-color: #E61414;
+    color: #EEEEEE;
+}
+.form .butt button:hover {
+    background-color: #5b1b52;
+}
+/* end contact */
+
+/* start footer */
+.footer .mealify img{
+    width: 40px;
+}
+.footer{
+    padding: 10px;
+}
+.footer span{
+    font-size: 30px;
+}
+.mealify .red{
+    color:brown;
+}
+.mealify span{
+    color: #EEEEEE;
+}
+.footer p{
+    color: #EEEEEE;
+}
+.footer .social{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.footer .social i{
+    font-size: 30px;
+    padding: 40px;
+    color: #EEEEEE;
+}
+.footer .social h2{
+    color: #EEEEEE;
+}
+.footer{
+    background-image: url(./../images/textured-metal-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer span::selection{
+    background-color: red;
+}
+.footer .mealify p::selection{
+    background-color: red;
+}
+.footer .social h2::selection{
+    background-color: red;
+}
+.block2{
+    padding-bottom: 10px;
+}
+.block2 h2{
+    color: #EEEEEE;
+}
+.block2 input,button{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+}
+.block2 button{
+    font-size: 17px;
+    transition: all .7s;
+    color: #EEEEEE;
+    border: none;
+    background: brown;
+}
+.block2 button:hover{
+background-color: rgb(243, 15, 15);
+}
+.block2 h2::selection{
+    background-color: red;
+}
+.block2 p::selection{
+    background-color: red;
+}
+.lk{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.block2 .lk h3{
+    color: #EEEEEE;
+}
+.background-c{
+    padding: 0px 0px 10px 10px;
+    transition: all 1s;
+}
+.background-c:hover{
+background-color: #c3bfbf;
+transform: translatex(4px);
+width: 190px;
+height: 50px;
+}
+.block3 i{
+    font-size: 30px;
+    color: rgb(110, 6, 6);
+
+}
+.block3 h2{
+    padding-left: 10px;
+    color: #EEEEEE;
+}
+.block3{
+    padding-bottom: 20px;
+}
+.block3 h2::selection{
+    background-color: #e30e0e;
+}
+.block3 .white::selection{
+    background-color: #e30e0e;
+}
+.block3 .white{
+    color: #EEEEEE;
+}
+/* end footer */

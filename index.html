@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mealify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- start home -->
+    <div class="home">
+        <div class="navbar">
+            <div class="container1">
+                <div class="logo">
+                    <a href="./index.html">
+                        Mealify
+                    </a>
+                </div>
+                <div id="links" class="navs">
+                    <i onclick="hidemenu" class=" fas fa-solid fa-x"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Chefs</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <i onclick="showmenu" class=" fas fa-solid fa-bars" id="bars"></i>
+        </div>
+        <div class="sec1">
+            <div class="container-item">
+                <div class="item md-33">
+                    <img src="./images/hero-img.png" alt="delicious dish">
+                </div>
+                <div class="item-details md-33 ">
+                    <h2>
+                        Enjoy Your Healthy
+                        Delicious Food
+                    </h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, voluptatem?</p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button class="red">
+                                        Book a Table
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                        <span>Watch a video</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end home -->
+    <!-- start chefs -->
+    <div class="chefs">
+        <div class="chef-title">
+            <h5>CHEFS</h5>
+            <h2>
+                Our <span>Proffesional</span> Chefs
+            </h2>
+        </div>
+        <div class="container-chef">
+            <div class="item-image md-33">
+                <div class="bar">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="inner">
+                    <img src="./images/chefs-1.jpg" alt="fantastic chef">
+                    <h2>Walter White</h2>
+                    <h5>Master Chef</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ab.</p>
+                </div>
+            </div>
+            <div class="item-image md-33">
+                <div class="bar">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="inner">
+                    <img src="./images/chefs-2.jpg" alt="fantastic chef">
+                    <h2>Walter White</h2>
+                    <h5>Master Chef</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ab.</p>
+                </div>
+            </div>
+            <div class="item-image md-33">
+                <div class="bar">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="inner">
+                    <img src="./images/chefs-3.jpg" alt="fantastic chef">
+                    <h2>Walter White</h2>
+                    <h5>Master Chef</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ab.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end chefs -->
+    <!-- start gallery -->
+    <div class="gallery">
+        <div class="gallery-title">
+            <h5>Gallery</h5>
+            <h2>
+                Check <span>Our Gallery</span>
+            </h2>
+        </div>
+        <div class="container-gallery">
+            <div class="column">
+                <div class="item-gallery md-100">
+                    <img src="./images/meal-1.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Pizza</h3>
+                            <p>
+                                Hawaiian pizza with ham and pineapple
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-gallery up md-100">
+                    <img src="./images/meal-4.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Frittata</h3>
+                            <p>
+                                Frittata or potato pie in a ceramic plate
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="item-gallery md-100">
+                    <img src="./images/meal-2.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Beef steaks</h3>
+                            <p>
+                                Tasty beef steaks flying above cast iron grate with fire flames.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-gallery md-100">
+                    <img src="./images/meal-7.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Frittata </h3>
+                            <p>
+                                Frittata or potato pie in a ceramic plate </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="item-gallery md-100">
+                    <img src="./images/meal-3.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Levitation pizza</h3>
+                            <p>
+                                Levitation pizza on black background.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-gallery md-100">
+                    <img src="./images/meal-5.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Crispy Fried Chicken</h3>
+                            <p>
+                                Golden brown chicken legs with a crunchy coating and juicy meat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-gallery md-100">
+                    <img src="./images/meal-6.jpg" alt="fantastic food">
+                    <div class="block">
+                        <div class="center">
+                            <h3>Lyulya kebab</h3>
+                            <p>
+                                Tender and juicy skewers of ground lamb or beef, flavored with aromatic spices and herbs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end gallery -->
+    <!-- start contact -->
+    <div class="contact-us">
+        <div class="container-contact">
+            <div class="help">
+                <h5>
+                    CONTACT
+                </h5>
+                <h2>
+                    Need Help ? <span> Contact Us</span>
+                </h2>
+            </div>
+            <div class="map-item">
+                <img src="./images/contact-details-map.png" alt="our location">
+            </div>
+            <div class="our-details">
+                <div class="our-address md-50  ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-map"></i></td>
+                                <td>
+                                    <h2 class="selection">Our Address</h2>
+                                    <p class="selection">A108 Adam Street, New York, NY 535022</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="email-us md-50 ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-envelope"></i></td>
+                                <td>
+                                    <h2 class="selection">Email Us</h2>
+                                    <p class="selection">contact@example.com</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="call-us md-50 ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-phone"></i></td>
+                                <td>
+                                    <h2 class="selection">Call Us</h2>
+                                    <p class="selection">+1 5589 55488 55</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="opening-hour md-50 ">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-share-nodes"></i></td>
+                                <td>
+                                    <h2 class="selection">Opening Hours</h2>
+                                    <p class="selection">Mon-Sat: 11AM - 23PM; Sunday : Closed</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="form">
+                <div class="container-form">
+                    <form>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <input class="width50" type="text" name="your name" placeholder="Your Name"
+                                        required>
+                                </tr>
+                                <tr>
+                                    <input class="width50" type="email" name="your email" placeholder="Your Email"
+                                        required>
+                                </tr>
+                                <tr>
+                                    <input class="width100" type="subject" name="your subject" placeholder="Subject"
+                                        required>
+                                </tr>
+                                <tr>
+                                    <textarea class="width100 high" name="message" placeholder="Message"
+                                        required></textarea>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="butt">
+                            <button type="submit">
+                                Send Message
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <div class="footer">
+        <div class="block1 md-33">
+            <div class="mealify">
+                <img src="./images/favicon.png" alt="icon">
+                <span> Mealify <span class="red">.</span></span>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, impedit.</p>
+            </div>
+            <div class="social">
+                <h2>Social Media</h2>
+                <hr>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="block2 md-33">
+            <h2>
+                Subscribe our Newsletter
+            </h2>
+            <p>Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay
+                up-to-date with all things Mealify!</p>
+            <form>
+                <input type="email" name="enter your email address" required placeholder="Enter your email address">
+                <button type="submit">
+                    <i class="fa-regular fa-envelope"></i>
+                    Subscribe
+                </button>
+            </form>
+            <h2>
+                Quick Links
+            </h2>
+            <div class="lk">
+                <div class="flex-column ">
+                    <div class="background-c">
+                        <h3>menu</h3>
+                    </div>
+                    <div class="background-c">
+                        <h3>about us</h3>
+                    </div>
+                    <div class="background-c">
+                        <h3>testimonial</h3>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <div class="background-c">
+                        <h3>promo</h3>
+                    </div>
+                    <div class="background-c">
+                        <h3>contact</h3>
+                    </div>
+                    <div class="background-c">
+                        <h3>our partners</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="block3 md-33">
+            <h2>
+                Get in Touch
+            </h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-globe"></i></td>
+                        <td class="white">A108 Adam Street, New York, NY 535022</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-envelope"></i>
+                        </td>
+                        <td class="white">
+                            contact@example.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-phone"></i></td>
+                        <td class="white">+1 5589 55488 55</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
